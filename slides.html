@@ -1,0 +1,95 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <link href="slides.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+        <!-- <script src="../Java Script/homeJS.js"></script> -->
+    </head>
+
+    <body>
+
+
+
+
+
+<div>
+
+<div>
+<div>
+
+<div>
+
+
+
+
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="slide-1.gif">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="SmartFX-Logo.jpg">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="SmartFX-Logo.png">
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides()
+            {
+                var i;
+                var slides = document.getElementsByClassName( "mySlides" );
+                var dots = document.getElementsByClassName( "dot" );
+                for ( i = 0; i < slides.length; i++ ) {
+                    slides[ i ].style.display = "none";
+                }
+                slideIndex++;
+                if ( slideIndex > slides.length ) { slideIndex = 1 }
+                for ( i = 0; i < dots.length; i++ ) {
+                    dots[ i ].className = dots[ i ].className.replace( " active", "" );
+                }
+                slides[ slideIndex - 1 ].style.display = "block";
+                dots[ slideIndex - 1 ].className += " active";
+                setTimeout( showSlides, 2000 ); // Change image every 3 seconds
+            }
+        </script>
+
+
+
+
+
+
+    </div>
+
+</div>
+
+
+</div>
+
+
+
+</body>
+</html>
